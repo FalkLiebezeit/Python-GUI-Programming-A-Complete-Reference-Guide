@@ -22,7 +22,7 @@ class HelloView(tk.Frame):
 
         # Layout form
         name_label.grid(row=0, column=0, sticky=tk.W)
-        name_entry.grid(row=0, column=1, sticky=(tk.W + tk.E))
+        name_entry.grid(row=0, column=1, sticky=tk.W + tk.E)
         ch_button.grid(row=0, column=2, sticky=tk.E)
         hello_label.grid(row=1, column=0, columnspan=3)
         self.columnconfigure(1, weight=1)
